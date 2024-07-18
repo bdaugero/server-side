@@ -5,7 +5,7 @@ mongoose.connect("mongodb://localhost/google-docs")
 
 const io = require("socket.io")(3001, {
     cors: {
-      origin: "https://archivos-compartidos.netlify.app/documents/829fa418-4304-4b2a-97d4-ffbda9fdb8a5",
+      origin: "http://localhost:3000",
       methods: ["GET", "POST"],
     },
   })
